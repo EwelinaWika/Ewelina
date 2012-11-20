@@ -111,7 +111,7 @@ rm -rf *
 ```
 #Laboratorium 3
 
-Zad.1 Wyświetl plik /etc/passwd z podziałem na strony przyjmując, że strona na 5 linii tekstu.
+zd.1 Wyświetl plik /etc/passwd z podziałem na strony przyjmując, że strona na 5 linii tekstu.
 ```sh
 more -5 /etc/passwd
 ```
@@ -143,7 +143,7 @@ zd.5 Wyświetl linie o numerach 7, 6 i 5 od końca pliku /etc/passwd.
 ```sh
 tail -n 7 /etc/passwd | head -n 3 
 ```
-zdd.6 Wyświetl zawartość pliku /etc/passwd w jednej linii.
+zd.6 Wyświetl zawartość pliku /etc/passwd w jednej linii.
 ```sh
 cat /etc/passwd |tr "n" " "
 ```
@@ -281,33 +281,33 @@ find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /dev/nu
 ```
 Zadania różne
 
-Zad.5 Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę „x” i zawiera dokładnie trzy znaki.
+zd.5 Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę „x” i zawiera dokładnie trzy znaki.
 ```sh
 rm x??
 ```
-Zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie rrrr-mm-dd.
+zd.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie rrrr-mm-dd.
 ```sh
 mkdir date +%Y-%m-%d
 ```
 #Laboratorium 6
 
-Zad.1 W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
+zd.1 W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
 ```sh
 grep . {1,} plik.txt
 ```
-Zad.2 Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
+zd.2 Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
 ```sh
 grep ^[0-9] pl*
 ```
-Zad.3 Znajdź pliki, zawierające wiersz w którym na 9 pozycji występuje litera r.
+zd.3 Znajdź pliki, zawierające wiersz w którym na 9 pozycji występuje litera r.
 ```sh
 ls -1 | grep -E '^.{8}r.*'
 ```
-Zad.4 Policz, ilu użytkowników systemu używa powłoki bash (zgodnie z zapisami w pliku /etc/passwd).
+zd.4 Policz, ilu użytkowników systemu używa powłoki bash (zgodnie z zapisami w pliku /etc/passwd).
 ```sh
 grep -c bash /etc/passwd
 ```
-Zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
+zd.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
 ```sh
 egrep "(X|D|C|M|V|L|I){1,}" plik.txt
 ```
